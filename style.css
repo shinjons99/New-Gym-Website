@@ -6,6 +6,9 @@
     font-family: 'Poppins', sans-serif;
   
 }
+html{
+    scroll-behavior: smooth;
+}
 .nav{
     position: fixed;
     display: flex;
@@ -52,7 +55,7 @@ cursor: pointer;
     display: none;
 }
 .background-image{
-    background-image: url("./img/bg.jpg");
+    background-image: url("../Gym-Website/img/bg.jpg");
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -491,7 +494,7 @@ font-size: 1.7rem;
         width: 300px;
         height: 80vh;
         position: fixed;
-        top: 0;
+        top: 0px;
         right: -300px;
         background: rgba(0,0,0,0.8);
         z-index: 100000;
@@ -609,10 +612,271 @@ font-size: 1.7rem;
     .trainer .people .team_one .profession{
         padding: 0 15px 5px 15px;
     }
+    .class{
+        padding: 6rem;
+    }
+    .class .small_title{
+        font-size: 1.1rem;
+        padding-bottom: 4px;
+        }
+    .class .title{
+        font-size: 2rem;
+        padding-bottom: 30px;
+    }
+    .class .class_menu .team_one .team_details{
+        padding-bottom: 7px;
+    }
+    .class .class_menu .team_one .team_details .name{
+    padding: 5px 15px 0 15px;
+    
+    }
+    .class .class_menu .team_one .team_details .name .name_details h4{
+    font-size: 1.2rem;
+    }
+    .class .class_menu .team_one .team_details .name .name_details p{
+        font-size: 1rem;
+        }
+    
+        .class .class_menu .team_one .team_details .name .name_details p span {
+            font-size: 1rem;
+            }    
+            /*
+            !  use circular shape here
+            */
+    .class .class_menu .team_one .team_details .name .price h5 {                      
+                 font-size: 0.9rem;
+                 width: 3.2rem;
+                 height: 3.2rem;
+                 line-height: 3.2rem;
+    }    
+                 .class .class_menu .team_one .profession{
+                    padding: 15px 15px 30px 15px;
+                 }
+                 .class .class_menu .team_one .profession p {                      
+                
+                       font-size: 1rem;
+                       
+                       }  
+                       .contact{
+                        padding: 6rem;
+                       }
+                       .contact .form h2{
+                        font-size: 2rem;
+                        padding-bottom: 7px;
+                       }
+                       .contact .form .submit input, .contact .form .submit textarea{
+                        padding: 12px;
+                        margin: 10px 0;
+                       }
+                       .contact .form .submit input::placeholder{
+                        font-size: 1rem;
+                       }
+                       .contact .form .submit textarea::placeholder{
+                        font-size: 1rem;
+                       }
+                       .contact .form .submit a{
+                        padding: 13px 0;
+                        font-size: 1rem;
+                        margin: 10px 0;
+                       }
+    .contact .map h2{
+        font-size: 2rem;
+        padding-bottom: 7px;
+    }
+    .contact .map p{
+        font-size: 1rem;
+        padding-bottom: 20px;
+    }
+    .footer{
+        padding: 6rem;
+    }
+
 }
 @media screen and (max-width:768px) {
+    .nav h2{
+        font-size: 1.5rem;
+    }
+    .background-image{
+        background-position: center;
+    }
+    .mid p{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+     }
+     .mid h2{
+         font-size: 2.1rem;
+     
+     }
+     .mid i{
+         color: #ff5733;
+         font-size: 2rem;
+        
+     }
+     .mid .btn{
+     margin-top: 1rem;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     }
+     .mid .btn a.simple{
+         padding: 0.7rem 1.4rem;
+         margin-bottom: 7px;
+     }
+     .mid .btn a.border{
+         padding: 0.7rem 1.4rem;
+     }
+     .details{
+        padding: 5rem 2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+       .details .one{
+        width: 70%;
+    
+    }
+    .details .one a{
+        font-size: 1rem;
+    }
+    .details .two{
+        padding-left: 0;
+       border-left: 0;
+       border-top: 1px solid #666262;
+        width: 70%;
+        margin-top: 1.7rem;
+        padding-top: 1.7rem;
+    }
+    .trainer{
+        padding: 5rem 2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .trainer .about{
+        width: 70%;
+        margin-bottom: 1.7rem;
+    }
+    /*
+    !copy start from here
+    */
+    .trainer .people{
+        width: 70%;
+    }
+    .class{
+        padding: 6rem;
+    }
+    .class .class_menu{
+        flex-direction:column ;
+        justify-content: center;
+    }
+    .class .class_menu .team_one {
+        width: 65%;
+        margin-bottom: 20px;
+    }
+    
+                       .contact{
+                        padding: 5rem 2rem;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                       }
+                       .contact .form{
+                        width: 70%;
+                        margin-bottom: 1.5rem;
+                       }
+                       .contact .form h2{
+                        font-size: 2.5rem;
+                       }
+                       .contact .map{
+                        width: 60%;
+                       }
+    .contact .map h2{
+        font-size: 2rem;
+        padding-bottom: 7px;
+    }
+    .contact .map p{
+        font-size: 1rem;
+        padding-bottom: 20px;
+    }
+    .footer{
+        padding: 5rem 2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     
 }
 @media screen and (max-width:496px) {
+    .mid p{
+        margin-bottom: 0.8rem;
+     }
+     .mid h2{
+         font-size: 1.8rem;
+     
+     }
+     .mid i{
+         font-size: 1.8rem;
+        
+     }
+     .mid .btn{
+     margin-top: 0.7rem;
+     }
+     .details{
+        padding: 4rem 1rem;
+    }
+       .details .one{
+        width: 100%;
+    }
+    .details .two{
+        width: 100%;
+
+    }
+    .trainer{
+        padding: 4rem 1rem;
+    }
+    .trainer .about{
+        width: 100%;
+    }
+    /*
+    !copy start from here
+    */
+  
+    .trainer .people{
+        width: 80%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .trainer .people .team_one{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .class{
+        padding: 4rem 1rem;
+    }
+    .class .class_menu .team_one {
+        width: 100%;
+    }
+    
+                       .contact{
+                        padding: 4rem 1rem;
+                       }
+                       .contact .form{
+                        width: 100%;
+                        margin-bottom: 1.5rem;
+                       }
+                       .contact .form h2{
+                        font-size: 2.5rem;
+                       }
+                       .contact .map{
+                        width: 100%;
+                       }
+    .footer{
+        padding: 5rem 2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     
 }

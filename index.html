@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
     <link rel="stylesheet" href="style.css">
+    <!-- AOS CSS LINK with the website -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Gym-- Website</title>
 </head>
 <body>
     <div class="nav">
-        <h2>Afraem Fitness</h2>
+        <h2  data-aos="fade-left">Afraem Fitness</h2>
         <ul id="item">
-            <li><a href="">Home</a></li>
-            <li><a href="">About Us</a></li>
-            <li><a href="">Classes</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#aboutus">About Us</a></li>
+            <li><a href="#classes">Classes</a></li>
+            <li><a href="#contact">Contact</a></li>
             <div class="icon">
                 <i class="fa fa-facebook-f"></i>
                 <i class="fa fa-twitter" aria-hidden="true"></i>
@@ -24,7 +26,7 @@
         </ul>
         <i id="menu_bar" class="fa fa-bars" aria-hidden="true" ></i>
     </div>
-    <div class="background-image">
+    <div id="home" class="background-image">
        <div class="overlay">
        </div>
     </div>
@@ -38,13 +40,13 @@
         </div>
     </div>
     <div class="details">
-        <div class="one">
+        <div class="one"    data-aos="fade-up">
             <h3>New to the Fitness?</h3>
             <h6>Your membership is up to 2 months FREE($62.50 per month)</h6>
             <p>Afraem Fitness is free HTML template by Peripheral Logistics and Distribution for your commercial website. Bootstrap v5.2.1 Layout. Feel free to use it.</p>
             <a href="#">Become a Member Today</a>
         </div>
-        <div class="two">
+        <div class="two"   data-aos="fade-up">
             <h3>Working Hours</h3>
             <br>
             <h5>sunday:closed</h5>
@@ -55,8 +57,8 @@
             <p>7.00 AM-10.00 PM </p>
         </div>
     </div>
-    <div class="trainer">
-        <div class="about">
+    <div id="aboutus" class="trainer">
+        <div class="about"  data-aos="fade-left">
     <h2>Hello, We are Afraem Fitness</h2>
     <p>A personal trainer is an individual who has earned a 
     certification that demonstrates they have achieved a level of competency for creating and delivering safe and effective
@@ -67,7 +69,7 @@
         meaningful feedback, and by being a reliable source for accountability. Thank you.
     </p>
         </div>
-        <div class="people">
+        <div class="people" data-aos="fade-right">
 <div class="team_one">
     <div class="img">
         <img src="img/team1.jpg" alt="">
@@ -101,11 +103,11 @@
         </div>
     </div>
 
-<div class="class">
+<div id="classes" class="class">
     <p class="small_title">Get A Perfect Body</p>
-    <h2 class="title">Our Training Classes</h2>
+    <h2 class="title" data-aos="fade-up">Our Training Classes</h2>
     <div class="class_menu">
-        <div class="team_one">
+        <div class="team_one" data-aos="fade-up">
             <div class="img">
                 <img src="img/class1.jpg" alt="">
             </div>
@@ -124,7 +126,7 @@
                 </div>
             </div>
         </div>
-        <div class="team_one">
+        <div class="team_one" data-aos="fade-down">
             <div class="img">
                 <img src="img/class2.jpg" alt="">
             </div>
@@ -143,7 +145,7 @@
                 </div>
             </div>
         </div>
-        <div class="team_one">
+        <div class="team_one" data-aos="fade-up">
             <div class="img">
                 <img src="img/class3.jpg" alt="">
             </div>
@@ -164,17 +166,17 @@
         </div>
     </div>
 </div>
-<div class="contact">
-    <div class="form">
+<div id="contact" class="contact">
+    <div class="form"  data-aos="fade-left">
         <h2>Feel free to ask anything</h2>
         <div class="submit">
             <input type="text" name="" placeholder="Name">
             <input type="email" name="" placeholder="Email">
-            <textarea placeholder="Message" name="" id="" cols="30" rows="10"></textarea>
+            <textarea placeholder="Message" name="" id=""></textarea>
             <a href="#">Sent Message</a>
         </div>
     </div>
-    <div class="map">
+    <div class="map" data-aos="fade-right">
         <h2>Where you can find us?</h2>
         <p><i class="fa-solid fa-location-dot"></i> Nila Nir,1/11,road-05,Sikder real state, Tali office Rd</p>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.1824187124403!2d90.36095021744383!3d23.740873500000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755bf592f30fe8b%3A0xa2bf5d9c50b4bd45!2sNila%20Nir!5e0!3m2!1sen!2sbd!4v1670083737036!5m2!1sen!2sbd" width="1290" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -185,8 +187,18 @@
     <P><i class="fa-solid fa-envelope"></i>
     info@afraemfitness.com <br><i class="fa-solid fa-square-phone"></i>+8801777668766</P>
 </div>
-
+<!-- use aos link animation -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 200,
+    duration: 1000, 
+  });
+</script>
+<!-- AOS END -->
+<!-- js link -->
 <script src="script.js"></script>
+<!-- font awesome link -->
     <script src="https://kit.fontawesome.com/9bed75c9bb.js" crossorigin="anonymous"></script>
 </body>
 </html>
